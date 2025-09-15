@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0c0c;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    text-align: center;
+    background-color: #525151;
+    width: 30%;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    /* border: 1px dashed rgb(255, 0, 0); */
+    height: 200px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #f76a6a;
+    animation: several 10s linear infinite alternate;
+}
+
+@keyframes several {
+    0% {
+        box-shadow: 0 0 20px 10px #fc5d1e;
+    }
+
+    20% {
+        box-shadow: 0 0 20px 10px #fced1e;
+    }
+
+    40% {
+        box-shadow: 0 0 20px 10px#34fc1e;
+    }
+
+    60% {
+        box-shadow: 0 0 20px 10px #1ef5fc;
+    }
+
+    80% {
+        box-shadow: 0 0 20px 10px #c51efc;
+    }
+
+    100% {
+        box-shadow: 0 0 20px 10px #fc1e8d;
+    }
+}
+
+button:hover {
+    opacity: 0.3;
+}
+
+button:active {
+    opacity: 1;
+}
+
+button {
+    animation: shadow 5s infinite linear alternate;
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: 0 0 20px #f00;
+    }
+
+    to {
+        box-shadow: 0 0 20px #00f;
+    }
+}
+
+.button1 {
+    width: 90px;
+    height: 30px;
+    margin-top: 25px;
+    display: flex;
+    margin-left: 50px;
+    background-color: #737373;
+}
+
+.button2 {
+    width: 90px;
+    display: flex;
+    height: 30px;
+    margin-top: -28px;
+    margin-left: 200px;
+    background-color: #737373;
+}
+
+
+
+    /* Smartphones */
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .button1,
+    .button2 {
+        width: 100%;
+        margin: 10px auto;
+        justify-content: center;
+    }
+}
+
+    /* Tablets  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 70%;
+        height: auto;
+        font-size: 18px;
+        padding: 25px;
+    }
+
+    .button1,
+    .button2 {
+        width: 45%;
+        margin: 15px auto;
+        justify-content: center;
+    }
+}
+
+/* ✅ Larger Screens (Laptops & Desktops) */
+@media (min-width: 1025px) {
+    .container {
+        width: 30%;
+        height: 200px;
+    }
+}

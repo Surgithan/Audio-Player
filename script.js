@@ -1,0 +1,9 @@
+ function playAudio() {
+    const audio = document.getElementById("audio");
+    audio.play();
+}
+
+function pauseAudio() {
+    const audio = document.getElementById("audio");
+    audio.pause();
+}
